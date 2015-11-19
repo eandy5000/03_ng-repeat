@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ngDesigners">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+<!--foo can be main or anything as long it is consistent in index-->
+<div ng-controller="MainController as foo" class="container">
+
+
+<!--ng-repeat defines i in foo. i can be anything,-->
+    <!--as long as it is consistent in index -->
+        <div ng-repeat="i in foo.items">
+            <h4>{{foo.item.name}} {{foo.item.description}}</h4>
+            <p>{{i.name}} {{i.description}}</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
